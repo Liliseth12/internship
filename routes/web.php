@@ -28,3 +28,7 @@ Route::resource('departments','DepartmentController');
 Route::resource('projects', 'ProjectController');
 
 Route::resource('positions', 'PositionController');
+
+Route::get('salary/create', 'SalaryController@create')->name('salary.create');
+
+Route::get('salary/{salary}', 'SalaryController@show')->name('salary.show');
